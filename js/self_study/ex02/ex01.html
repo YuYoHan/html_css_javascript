@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ex01</title>
+</head>
+<body>
+<script>
+  let name = prompt("성함을 입력하세요")
+  let kor = Number(prompt("국어 점수"))
+  let eng = Number(prompt("영어 점수"))
+  let math = Number(prompt("수학 점수"))
+
+  let tot = kor + eng + math;
+  document.write("이름 : " + name + "</br>")
+  document.write("국어 : " + kor + "</br>")
+  document.write("영어 : " + eng + "</br>")
+  document.write("수학 : " + math + "</br>")
+  document.write("총점 : " + tot + "</br>")
+  // toFixed : Number 인스턴스의 소수 부분 자릿수를 전달받은 값으로 고정한 후, 그 값을 문자열로 반환합니다.
+  // num.toFixed(소수 부분의 자리수)
+  document.write("평균 : " + (tot/3).toFixed(1)+"점 </br>")
+</script>
+</body>
+</html>
