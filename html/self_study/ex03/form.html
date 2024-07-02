@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"]{
+            background-color: beige;
+            border: 3px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <!--웹페이지에서의 입력양식의 그룹 / 원하는 정보를 연결하여 전달받기 위한 명확한 폼양식
+        [폼에 쓰이는 속성]
+        name="폼의 이름 / 식별하기 위한 이름을 지정"
+        mathod="폼을 서버로 전송할 때 http메소드를 지정(전송방식)
+        get="주소표시줄에 사용자가 입력한 내용이 그대로 표시"
+        post="대부분이 사용하는 방식, 내부적으로 보이지 않게 전송"
+    -->
+    <form>
+        <!--fieldset : 특정한 엘리멘트끼리 그룹화
+            legend   : fieldset안에서 정의를 부여
+            label    : 해당 서식의 용도, 내용
+            
+            input    : "서식" type="속성" name="이름"-->
+        <fieldset>
+            <legend>개인정보작성</legend>
+            <label>id</label>
+            <input type="text" name ="id"/>
+        </fieldset>
+
+        <!--비밀번호 입력양식 -암호화된 입력- -->
+        <input type="password" name="pw"/>
+        <br><br>
+
+        <!--전화번호입력양식 -모바일 확인시 숫자키패드- -->
+        <input type="tel" placeholder="010-0000-0000" name="tel"/>
+        <br><br>
+
+        <!--체크박스 -다중선택 혹은 선택시 사용- -->
+        <input type="checkbox" name="ch"/>
+        <!--라디오버튼 -단일항목 선택 사용- -->
+        <input type="radio" name="r"/>
+
+        <br><br>
+        <!--버튼(submit): 제출, 확인
+            reset : 회수, 다시-->
+        <input type="submit" value="확인하기" name="btn"/>
+        <input type="reset" value="취소하기" name="btn"/>
+        
+        <!--버튼 태그-->
+        <button type="button">버튼</button>
+
+        <!--셀렉트박스 : 펼쳐진 상태에서 항목을 고르는 서식-->
+        <select>
+            <option>항목1</option>
+            <option>항목2</option>
+        </select>
+
+        <!--많은 내용의 글을 넣을 때 사용하는 태그-->
+        <textarea></textarea>
+
+    </form>
+</body>
+</html>
